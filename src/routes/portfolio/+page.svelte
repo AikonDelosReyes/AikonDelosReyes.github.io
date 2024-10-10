@@ -1,7 +1,5 @@
 <script>
-    import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
-    import { faCamera, faGamepad, faGuitar, faBook } from '@fortawesome/free-solid-svg-icons';
-
+    
     let pageTitle = "My Portfolio";
     let description = "Explore my professional work and personal hobbies. Here are some of my projects and what I enjoy doing in my free time.";
 

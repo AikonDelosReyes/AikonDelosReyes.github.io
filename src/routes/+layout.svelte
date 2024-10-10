@@ -1,41 +1,40 @@
 <script lang="ts">
-    import "../app.css";
-    import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
-    import { faHome, faUser, faEnvelope, faBriefcase } from '@fortawesome/free-solid-svg-icons'; // Import the necessary icons
+  import "../app.css";
+  import { HomeSolid, UserSolid, EnvelopeSolid, BriefcaseSolid } from 'flowbite-svelte-icons';
 </script>
 
 <svelte:head>
-  <!-- Google Fonts and Title -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
-  <title>My SvelteKit App</title>
+<!-- Google Fonts and Title -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+<title>My SvelteKit App</title>
 </svelte:head>
 
 <!-- Main container with background image -->
 <div class="min-h-screen bg-cover bg-center flex flex-col items-center justify-between"
-     style="background-image: url('/images/Bears.png');">
-  
-  <!-- Header with specified color and shadow -->
-  <header class="w-full py-6" style="background-color: #FDF6B2; color: #8E4B10;">
-    <div class="container mx-auto px-4 text-center">
-      <h1 class="text-4xl font-extrabold">Aikon Delos Reyes</h1>
-      <nav class="mt-4 flex justify-center space-x-4"> <!-- Added flex and space-x-4 for horizontal layout -->
-        <a href="/" class="text-lg hover:text-gray-200 flex items-center">
-          <FontAwesomeIcon icon={faHome} class="mr-2" /> Home
-        </a>
-        <a href="/about" class="text-lg hover:text-gray-200 flex items-center">
-          <FontAwesomeIcon icon={faUser} class="mr-2" /> About
-        </a>
-        <a href="/contact" class="text-lg hover:text-gray-200 flex items-center">
-          <FontAwesomeIcon icon={faEnvelope} class="mr-2" /> Contact
-        </a>
-        <a href="/portfolio" class="text-lg hover:text-gray-200 flex items-center">
-          <FontAwesomeIcon icon={faBriefcase} class="mr-2" /> Portfolio
-        </a>
-      </nav>
-    </div>
-  </header>
+   style="background-image: url('/images/Bears.png');">
+
+<!-- Header with specified color and shadow -->
+<header class="w-full py-6" style="background-color: #FDF6B2; color: #8E4B10;">
+  <div class="container mx-auto px-4 text-center">
+    <h1 class="text-4xl font-extrabold">Aikon Delos Reyes</h1>
+    <nav class="mt-4 flex justify-center space-x-4"> <!-- Added flex and space-x-4 for horizontal layout -->
+      <a href="/" class="text-lg hover:text-gray-200 flex items-center">
+        <HomeSolid class="w-5 h-5 mr-2" /> Home
+      </a>
+      <a href="/about" class="text-lg hover:text-gray-200 flex items-center">
+        <UserSolid class="w-5 h-5 mr-2" /> About
+      </a>
+      <a href="/contact" class="text-lg hover:text-gray-200 flex items-center">
+        <EnvelopeSolid class="w-5 h-5 mr-2" /> Contact
+      </a>
+      <a href="/portfolio" class="text-lg hover:text-gray-200 flex items-center">
+        <BriefcaseSolid class="w-5 h-5 mr-2" /> Portfolio
+      </a>
+    </nav>
+  </div>
+</header>
 
   <!-- Main content with card-like structure -->
   <main class="flex-grow flex items-center justify-center py-8 w-auto">
